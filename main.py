@@ -84,8 +84,8 @@ def main():
             greeded_people.append(last_chat_id)
 
         else:
-            print('test hi')
-            
+            greet_bot.send_message(last_chat_id, 'Hi, {}'.format(last_chat_name))
+
         if now.hour == 6 and now.minute == 0:
             greeded_people.clear()
 

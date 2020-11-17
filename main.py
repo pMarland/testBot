@@ -26,9 +26,10 @@ class BotHandler:
 
         if len(get_result) > 0:
             last_update = get_result[-1]
-            #print(len(get_result))
+            print(len(get_result))
         else:
-            #print(len(get_result))
+            print(len(get_result))
+            print('1')
             last_update = get_result[len(get_result)]
             #print(last_update)
 
@@ -82,6 +83,9 @@ def main():
             #today += 1
             greeded_people.append(last_chat_id)
 
+        else:
+            print('test hi')
+            
         if now.hour == 6 and now.minute == 0:
             greeded_people.clear()
 
